@@ -2,18 +2,18 @@
     <div class="swag-list__content">
   
       <div class="swag-list__content-top">
-        <h4> <!-- Title Here --> </h4>
-        <span> <!-- Size Here --> </span>
+        <h4> {{swagCtrl.item.title}} </h4>
+        <span> {{swagCtrl.item.size}} </span>
       </div>
   
       <div class="swag-list__content-bottom">
-        <span> <!-- Color Here --> </span>
-        <span> <!-- Price Here --> </span>
+        <span> {{swagCtrl.item.color}} </span>
+        <span> ${{swagCtrl.item.price}} </span>
       </div>
   
       <button class="swag__btn" 
-              ng-click="">
-        <!-- Action Label Here -->
+              ng-click="swagCtrl.action()">
+        {{swagCtrl.actionLabel}}
       </button>
     </div>
   </div>
